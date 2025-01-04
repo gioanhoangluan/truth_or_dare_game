@@ -244,11 +244,11 @@ function _page($$payload, $$props) {
     data: { truths: [], dares: [] },
     isLoading: false
   };
-  $$payload.out += `<div id="main-content" class="row justify-content-center svelte-1h0scsp">`;
+  $$payload.out += `<div id="main-content" class="d-flex justify-content-center svelte-pdkpcw">`;
   Col($$payload, {
     lg: 6,
     sm: 12,
-    class: "div-content",
+    class: "",
     children: ($$payload2) => {
       Card($$payload2, {
         class: "card-content",
@@ -262,7 +262,7 @@ function _page($$payload, $$props) {
                   Col($$payload5, {
                     sm: 6,
                     children: ($$payload6) => {
-                      $$payload6.out += `<a href="javascript:void(0);" class="float-end card-button svelte-1h0scsp"><i class="ti ti-reload"></i></a>`;
+                      $$payload6.out += `<a href="javascript:void(0);" class="float-end card-button svelte-pdkpcw"><i class="ti ti-reload"></i></a>`;
                     },
                     $$slots: { default: true }
                   });
@@ -273,7 +273,7 @@ function _page($$payload, $$props) {
               $$payload4.out += `<!----> `;
               {
                 $$payload4.out += "<!--[-->";
-                $$payload4.out += `<div style="padding-top: 10vh;"><div class="d-flex flex-column text-center game-title svelte-1h0scsp"><span class="truth">Thật</span> <span class="or">hay</span> <span class="dare">Thách</span></div> <div class="mt-4"><form><div class="row mb-2 align-items-center"><div class="col-5 align-self-center"><label for="player1" class="form-label fw-bold text-regular svelte-1h0scsp">Tên bạn nam</label></div> <div class="col"><input type="text" class="form-control" id="player1"${attr("value", gameState.players[0].name)} required></div></div> <div class="row mb-2 align-items-center"><div class="col-5 align-self-center"><label for="player2" class="form-label fw-bold text-regular svelte-1h0scsp">Tên bạn nữ</label></div> <div class="col"><input type="text" class="form-control" id="player2"${attr("value", gameState.players[1].name)} required></div></div> <div class="mt-5 text-center"><button type="submit" class="btn btn-dark minw-40 text-regular btn-lg shadow svelte-1h0scsp">Bắt đầu</button></div></form></div></div>`;
+                $$payload4.out += `<div style="padding-top: 10vh;"><div class="d-flex flex-column text-center game-title svelte-pdkpcw"><span class="truth">Thật</span> <span class="or">hay</span> <span class="dare">Thách</span></div> <div class="mt-4"><form><div class="row mb-2 align-items-center"><div class="col-5 align-self-center"><label for="player1" class="form-label fw-bold text-regular svelte-pdkpcw">Tên bạn nam</label></div> <div class="col"><input type="text" class="form-control" id="player1"${attr("value", gameState.players[0].name)} required></div></div> <div class="row mb-2 align-items-center"><div class="col-5 align-self-center"><label for="player2" class="form-label fw-bold text-regular svelte-pdkpcw">Tên bạn nữ</label></div> <div class="col"><input type="text" class="form-control" id="player2"${attr("value", gameState.players[1].name)} required></div></div> <div class="mt-5 text-center"><button type="submit" class="btn btn-dark minw-40 text-regular btn-lg shadow svelte-pdkpcw">Bắt đầu</button></div></form></div></div>`;
               }
               $$payload4.out += `<!--]-->`;
             },
@@ -290,4 +290,4 @@ function _page($$payload, $$props) {
 }
 
 export { _page as default };
-//# sourceMappingURL=_page.svelte-A4jAHKmH.js.map
+//# sourceMappingURL=_page.svelte-6X_wZB8n.js.map
