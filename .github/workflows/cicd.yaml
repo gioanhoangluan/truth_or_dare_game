@@ -2,10 +2,10 @@ name: CICD
 
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
 
 env:
-  docker_image: luandnh1998/svelte-my-resume
+  docker_image: gioanhoangluan/truth-or-dare-game
 
 jobs:
   build:
