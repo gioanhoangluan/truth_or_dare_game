@@ -353,8 +353,8 @@
 	};
 </script>
 
-<div id="main-content" class="row justify-content-center">
-	<Col lg={6} sm={12} class="div-content">
+<div id="main-content" class="d-flex justify-content-center">
+	<Col lg={6} sm={12} class="">
 		<Card class="card-content">
 			<CardBody>
 				<Row>
@@ -480,26 +480,26 @@
 				{:else if gameState.state === 'question'}
 					<!-- add loader -->
 					{#if gameState.isLoading}
-						<div class=" d-flex justify-content-center" style="padding-top: 20vh;">
+						<div class=" d-flex justify-content-center" style="padding-top: 10vh;">
 							<div class="align-self-center">
 								<Spinner type="grow" color="dark" size="xxl" />
 							</div>
 						</div>
 					{:else}
 						<div class="">
-							<div class="row text-center" style="padding-top: 10vh;">
+							<div class="row text-center" style="padding-top: 7vh;">
 								<div
 									class="text-center text-regular mb-2"
-									style="font-size: 4rem; font-weight: 600"
+									style="font-size: 3rem; font-weight: 600"
 								>
-									{gameState.players[gameState.currentPlayerTurn].lastTurn === 'truth'
+									{gameState.players[gameState.currentPlayerTurn].lastTurn === 'dare'
 										? 'Thật'
 										: 'Thách'}
 								</div>
-								<div class="text-center text-regular mb-5" style="font-size: 2rem;">
+								<div class="text-center text-regular mb-4" style="font-size: 2rem;">
 									Lượt của {gameState.players[gameState.currentPlayerTurn].name}
 								</div>
-								<span class="game-question" style="font-size: 2.4rem">
+								<span class="game-question" style="font-size: 1.8rem">
 									{gameState.currentQuestion.value}
 								</span>
 
@@ -541,7 +541,8 @@
 
 	:global {
 		.card-content {
-			min-height: 95vh;
+			min-height: 80vh;
+			min-width: 95vw;
 			border: 0.5rem solid rgb(50, 50, 50);
 			background-color: #ffe3e4;
 		}
